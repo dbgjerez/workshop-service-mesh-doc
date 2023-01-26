@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Deploy Service :: Template Tutorial</title>
+    <title>Deploy Service :: Workshop Service Mesh</title>
     <link rel="canonical" href="https://github.com/dbgjerez/workshop-service-mesh-doc/template-tutorial/02-deploy.html">
     <link rel="prev" href="01-setup.html">
     <meta name="generator" content="Antora 3.0.0">
@@ -17,7 +17,7 @@
     <div class="navbar-brand">
       <a class="navbar-item" href="https://developers.redhat.com" target="_blank"><img
           src="../_/img/header_logo.png" height="40px" alt="Red Hat Developer Program"></a>
-      <a class="navbar-item" href="https://github.com/dbgjerez/workshop-service-mesh-doc">Template Tutorial</a>
+      <a class="navbar-item" href="https://github.com/dbgjerez/workshop-service-mesh-doc">Workshop Service Mesh</a>
       <button class="navbar-burger" data-target="topbar-nav">
         <span></span>
         <span></span>
@@ -72,27 +72,105 @@
 <ul class="nav-list">
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="01-setup.html">1. Setup</a>
+    <a class="nav-link" href="01-setup.html">1. Introduction</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="01-setup.html#prerequisite">Prerequisites</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="01-setup.html#minikube">Setup Minikube</a>
+    <a class="nav-link" href="01-setup.html#k8s">Local installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="01-setup.html#ocp">Openshift</a>
   </li>
 </ul>
   </li>
   <li class="nav-item is-current-page" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <a class="nav-link" href="02-deploy.html">2. Deploy Service</a>
+    <a class="nav-link" href="02-deploy.html">2. Concepts</a>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#package">Build Service</a>
+    <a class="nav-link" href="#architecture">Architecture</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#deploy">Deploy Dervice</a>
+    <a class="nav-link" href="#components">Components</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#objects">Istio objects</a>
   </li>
 </ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="02-deploy.html">3. Setup</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#deploy">Operator</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="02-deploy.html">3. Applications</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#deploy">Deploy applications</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#deploy">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#deploy">New application version</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#deploy">Blue/Green</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#deploy">Canary</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="02-deploy.html">4. Traffic Management</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="02-deploy.html">Timeouts</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="02-deploy.html">Retries</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="02-deploy.html">Circuit breakers</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="02-deploy.html">Fault ijection</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="02-deploy.html">5. Security</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="02-deploy.html">Mutual TLS</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="02-deploy.html">Authentication</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="02-deploy.html">Authorization</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="02-deploy.html">6. Observability</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="02-deploy.html">7. Extensibility</a>
   </li>
 </ul>
   </li>
@@ -124,7 +202,7 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="index.html">Template Tutorial</a></li>
-    <li><a href="02-deploy.html">2. Deploy Service</a></li>
+    <li><a href="02-deploy.html">2. Concepts</a></li>
   </ul>
 </nav>
   <div class="edit-this-page"><a href="https://github.com/dbgjerez/workshop-service-mesh-doc/edit/master/documentation/modules/ROOT/pages/02-deploy.adoc">Edit this Page</a></div>
@@ -210,7 +288,7 @@ Change the pod name with your pod name.
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="01-setup.html" class="query-params-link">1. Setup</a></span>
+  <span class="prev"><a href="01-setup.html" class="query-params-link">1. Introduction</a></span>
 </nav>
 </article>
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
