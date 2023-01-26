@@ -4,7 +4,7 @@ runtime:
 site:
   title: "Workshop Service Mesh"
   url: https://github.com/dbgjerez/workshop-service-mesh-doc
-  start_page: index.adoc
+  start_page: workshop-service-mesh-doc::index.adoc
 
 content:
   sources:
@@ -23,7 +23,7 @@ asciidoc:
 
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    url: url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
   supplemental_files:
     - path: ./supplemental-ui
