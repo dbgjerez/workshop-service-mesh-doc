@@ -1,7 +1,7 @@
-* xref:01-setup.adoc[1. Introduction]
-** xref:01-setup.adoc#prerequisite[Prerequisites]
-** xref:01-setup.adoc#k8s[Local installation]
-** xref:01-setup.adoc#ocp[Openshift]
+* xref:01-introduction.adoc[1. Introduction]
+** xref:01-introduction.adoc#prerequisite[Prerequisites]
+** xref:01-introduction.adoc#k8s[Local installation]
+** xref:01-introduction.adoc#ocp[Openshift]
 
 * xref:02-concepts.adoc[2. Concepts]
 ** xref:02-concepts.adoc#architecture[Architecture]
@@ -19,11 +19,11 @@
 *** xref:04-applications.adoc#bluegreen[Blue/Green]
 *** xref:04-applications.adoc#canary[Canary]
 
-* xref:02-concepts.adoc[4. Traffic Management]
-** xref:02-concepts.adoc[Timeouts]
-** xref:02-concepts.adoc[Retries]
-** xref:02-concepts.adoc[Circuit breakers]
-** xref:02-concepts.adoc[Fault ijection]
+* xref:05-traffic-management.adoc[4. Traffic Management]
+** xref:05-traffic-management.adoc#timeouts[Timeouts]
+** xref:05-traffic-management.adoc#retries[Retries]
+** xref:05-traffic-management.adoc#circuitbreaker[Circuit breaker]
+** xref:05-traffic-management.adoc#faultinjection[Fault ijection]
 
 * xref:02-concepts.adoc[5. Security]
 ** xref:02-concepts.adoc[Mutual TLS]
