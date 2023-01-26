@@ -1,7 +1,34 @@
-* xref:01-setup.adoc[1. Setup]
+* xref:01-setup.adoc[1. Introduction]
 ** xref:01-setup.adoc#prerequisite[Prerequisites]
-** xref:01-setup.adoc#minikube[Setup Minikube]
+** xref:01-setup.adoc#k8s[Local installation]
+** xref:01-setup.adoc#ocp[Openshift]
 
-* xref:02-deploy.adoc[2. Deploy Service]
-** xref:02-deploy.adoc#package[Build Service]
-** xref:02-deploy.adoc#deploy[Deploy Dervice]
+* xref:02-deploy.adoc[2. Concepts]
+** xref:02-deploy.adoc#architecture[Architecture]
+** xref:02-deploy.adoc#components[Components]
+** xref:02-deploy.adoc#objects[Istio objects]
+
+* xref:02-deploy.adoc[3. Setup]
+** xref:02-deploy.adoc#deploy[Operator]
+
+* xref:02-deploy.adoc[3. Applications]
+** xref:02-deploy.adoc#deploy[Deploy applications]
+** xref:02-deploy.adoc#deploy[Routing]
+** xref:02-deploy.adoc#deploy[New application version]
+*** xref:02-deploy.adoc#deploy[Blue/Green]
+*** xref:02-deploy.adoc#deploy[Canary]
+
+* xref:02-deploy.adoc[4. Traffic Management]
+** xref:02-deploy.adoc[Timeouts]
+** xref:02-deploy.adoc[Retries]
+** xref:02-deploy.adoc[Circuit breakers]
+** xref:02-deploy.adoc[Fault ijection]
+
+* xref:02-deploy.adoc[5. Security]
+** xref:02-deploy.adoc[Mutual TLS]
+** xref:02-deploy.adoc[Authentication]
+** xref:02-deploy.adoc[Authorization]
+
+* xref:02-deploy.adoc[6. Observability]
+
+* xref:02-deploy.adoc[7. Extensibility]

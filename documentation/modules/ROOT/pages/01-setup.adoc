@@ -4,26 +4,47 @@ include::_attributes.adoc[]
 [#prerequisite]
 == Prerequisite CLI tools
 
-include::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/master/prerequisites-kubernetes.adoc[]
-|===
+Cli like oc, kubectl, minikube, crc, helm, etc
 
-include::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/master/optional-requisites.adoc[]
-|===
+// include::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/master/prerequisites-kubernetes.adoc[]
+// include::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/master/optional-requisites.adoc[]
 
-[#minikube]
+[#k8s]
 == Setup Kubernetes
 
 :profile: my_profile
 
-include::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/master/kubernetes-setup.adoc[]
+// include::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/master/kubernetes-setup.adoc[]
 
-And then you are ready for start using Kubernetes:
+[tabs, subs="attributes+,+macros"]	
+====	
+Minikube::	
++	
+--	
+// TODO
+Minikube installation
+--
+OpenShift CRC::	
++	
+--	
+// TODO
+Openshift CRC installation
+--
+OpenShift::	
++	
+--
+// TODO
+Openshift installed
+--
+====
 
-image::kubelogo.png[]
+[#sources]
+== Get workshop sources
+// TODO
+Git url, etc
 
-[#downloadtutorial]
-== Get tutorial sources
+[#documentation]
+== Official documentation
 
-:tutorial-url: https://github.com/redhat-developer-demos/rhd-tutorial-common.git
-:folder: my_folder
-include::https://raw.githubusercontent.com/redhat-developer-demos/rhd-tutorial-common/master/download-sources.adoc[]
+// TODO
+Include documentation of official sites like Istio, Kubernetes, Red Hat, etc.
