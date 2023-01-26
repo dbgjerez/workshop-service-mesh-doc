@@ -26,9 +26,9 @@
 ** xref:05-traffic-management.adoc#faultinjection[Fault ijection]
 
 * xref:06-security.adoc[6. Security]
-** xref:06-security.adoc[Mutual TLS]
-** xref:06-security.adoc[Authentication]
-** xref:06-security.adoc[Authorization]
+** xref:06-security.adoc#mtls[Mutual TLS]
+** xref:06-security.adoc#authentication[Authentication]
+** xref:06-security.adoc#authorization[Authorization]
 
 * xref:07-observability.adoc[7. Observability]
 
