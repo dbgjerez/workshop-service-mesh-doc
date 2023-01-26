@@ -8,9 +8,9 @@
 ** xref:02-concepts.adoc#components[Components]
 ** xref:02-concepts.adoc#objects[Istio objects]
 
-* xref:02-setup.adoc[3. Setup]
-** xref:02-setup.adoc#concepts[Operator]
-** xref:02-setup.adoc#concepts[Helm]
+* xref:03-setup.adoc[3. Setup]
+** xref:03-setup.adoc#concepts[Operator]
+** xref:03-setup.adoc#concepts[Helm]
 
 * xref:02-concepts.adoc[3. Applications]
 ** xref:02-concepts.adoc#concepts[concepts applications]
