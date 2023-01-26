@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://github.com/dbgjerez/workshop-service-mesh-doc/workshop-service-mesh-doc/01-setup.html</loc>
-<lastmod>2023-01-26T15:18:04.406Z</lastmod>
+<lastmod>2023-01-26T15:36:39.010Z</lastmod>
 </url>
 <url>
 <loc>https://github.com/dbgjerez/workshop-service-mesh-doc/workshop-service-mesh-doc/02-concepts.html</loc>
-<lastmod>2023-01-26T15:18:04.406Z</lastmod>
+<lastmod>2023-01-26T15:36:39.010Z</lastmod>
 </url>
 <url>
 <loc>https://github.com/dbgjerez/workshop-service-mesh-doc/workshop-service-mesh-doc/03-setup.html</loc>
-<lastmod>2023-01-26T15:18:04.406Z</lastmod>
+<lastmod>2023-01-26T15:36:39.010Z</lastmod>
+</url>
+<url>
+<loc>https://github.com/dbgjerez/workshop-service-mesh-doc/workshop-service-mesh-doc/04-applications.html</loc>
+<lastmod>2023-01-26T15:36:39.010Z</lastmod>
 </url>
 <url>
 <loc>https://github.com/dbgjerez/workshop-service-mesh-doc/workshop-service-mesh-doc/index.html</loc>
-<lastmod>2023-01-26T15:18:04.406Z</lastmod>
+<lastmod>2023-01-26T15:36:39.010Z</lastmod>
 </url>
 </urlset>
