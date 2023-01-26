@@ -1,5 +1,5 @@
-name: template-tutorial
-title: Template Tutorial
+name: workshop-service-mesh-doc
+title: Service Mesh workshop
 version: master
 nav:
   - modules/ROOT/nav.adoc
