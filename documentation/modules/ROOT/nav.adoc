@@ -9,15 +9,15 @@
 ** xref:02-concepts.adoc#objects[Istio objects]
 
 * xref:03-setup.adoc[3. Setup]
-** xref:03-setup.adoc#concepts[Operator]
-** xref:03-setup.adoc#concepts[Helm]
+** xref:03-setup.adoc#operator[Operator]
+** xref:03-setup.adoc#helm[Helm]
 
-* xref:02-concepts.adoc[3. Applications]
-** xref:02-concepts.adoc#concepts[concepts applications]
-** xref:02-concepts.adoc#concepts[Routing]
-** xref:02-concepts.adoc#concepts[New application version]
-*** xref:02-concepts.adoc#concepts[Blue/Green]
-*** xref:02-concepts.adoc#concepts[Canary]
+* xref:04-applications.adoc[3. Applications]
+** xref:04-applications.adoc#demo[Demo architecture]
+** xref:04-applications.adoc#routing[Routing]
+** xref:04-applications.adoc#newversion[New application version]
+*** xref:04-applications.adoc#bluegreen[Blue/Green]
+*** xref:04-applications.adoc#canary[Canary]
 
 * xref:02-concepts.adoc[4. Traffic Management]
 ** xref:02-concepts.adoc[Timeouts]

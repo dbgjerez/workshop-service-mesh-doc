@@ -2,7 +2,12 @@
 include::_attributes.adoc[]
 
 [#architecture]
-== Istio Architecture
+== Architecture
+
+=== Istio Architecture
+// TODO
+
+=== RHSM Architecture
 // TODO
 
 [#components]
